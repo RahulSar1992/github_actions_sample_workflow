@@ -21,7 +21,7 @@ jobs:
               run: echo "Running Event on Master/Prod/Test Push Request"
 
     on-pull-request:
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' #Checking Pull request
         runs-on: ubuntu-latest
         steps:
             - name: "Running on master/test/prod on pull"
